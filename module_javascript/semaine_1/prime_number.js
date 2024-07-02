@@ -13,3 +13,20 @@ if (isPrime === true) {
 } else {
     console.log("Le nombre " + number + " n'est pas premier");
 }
+
+// calculate if a number is prime (can only be divided by himself)
+
+let primeNumber = 13; // number to check
+let isNumberPrime = true; // set a true value
+
+for(let i=2; i<primeNumber; i++) { // create a loop to check all numbers from 2 to 13
+    if (primeNumber%i === 0) { // if 13%1,2,3,4,5,6,7,8,9,10,11,12,13 output is 0
+        isNumberPrime = false;  // set value to false
+        break; // stop the loop
+    }
+}
+if (isNumberPrime === true) {
+    console.log(primeNumber + " is a prime number");
+} else {
+    console.log(primeNumber + " is not a prime number");
+}
