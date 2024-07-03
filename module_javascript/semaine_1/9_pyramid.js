@@ -15,3 +15,11 @@ for(let i=0; i<=maxLines; i++) {
     init += "#";
     console.log(init);
 }
+
+console.log("Third pyramid");
+let maxN = 10;
+let hashtag = "";
+for (let i = 0; i<=10 ; i++) {
+    hashtag+= "@";
+    console.log(hashtag);
+}

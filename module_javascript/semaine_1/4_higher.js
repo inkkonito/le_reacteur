@@ -23,3 +23,15 @@ if (numberA > numberB && numberA > numberC) {
 } else {
     console.log(numberC + " is the higher number");
 }
+
+let e = 1;
+let f = 3;
+let g = 0;
+
+if (e > f && e > g) {
+    console.log("E est le plus grand");
+} else if (f > e && f > g) {
+    console.log("F est le plus grand");
+} else {
+    console.log("G est le plus grand");
+}

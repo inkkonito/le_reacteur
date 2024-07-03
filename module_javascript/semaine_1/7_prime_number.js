@@ -30,3 +30,18 @@ if (isNumberPrime === true) {
 } else {
     console.log(primeNumber + " is not a prime number");
 }
+
+let numberTest = 18;
+let estPremier = true;
+
+for (let i = 2; i <= numberTest ; i++) {
+    if (numberTest%i === 0) {
+        estPremier = false;
+        break;
+    }
+}
+if (estPremier === true) {
+    console.log(numberTest + " est premier");
+} else {
+    console.log(numberTest + " n'est pas premier");
+}
