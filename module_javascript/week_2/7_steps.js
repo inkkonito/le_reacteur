@@ -8,3 +8,15 @@ const firstStep = () => {
   };
 
   firstStep();
+
+  
+  const stepOne = () => {
+    console.log("First step called");
+    stepSecond();
+  }
+
+  const stepSecond = () => {
+    console.log("Second step triggered")
+  }
+  
+  stepOne();

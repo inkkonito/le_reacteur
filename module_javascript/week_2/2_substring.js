@@ -10,3 +10,13 @@ let letterT = letterE + wordLength; // add 8 for init position "é" to last lett
 
 let substring = string.substring(letterE, letterT);
 console.log("Extract word with index 8 and index 16 gives : " + substring);
+
+let newString = "I am a student in information technology"; // extract information technology
+let subText = newString.slice(18, newString.length); //
+console.log(subText);
+
+newString = "I love Biarritz";
+if(newString.includes("Biarritz")) {
+    let biarritzLength = "biarritz".length
+    console.log(newString.slice(7, 7+biarritzLength))
+}

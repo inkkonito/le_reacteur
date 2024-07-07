@@ -16,3 +16,23 @@ if(email.indexOf("@") !== -1 && email.indexOf(".") !== -1) // verify if both @ .
 // valid?
 
 console.log(valid);
+
+// using a function
+
+const verifEmail = (email) => {
+    if (email.indexOf("@") !== -1 && email.indexOf(".") !== -1) {
+    const atIndex = email.indexOf("@");
+    const dotIndex = email.indexOf(".");
+    if (dotIndex > atIndex) {
+        console.log(email  + " Email is valid")
+    } else {
+        console.log(email + " Not found a . after a @")
+    }
+} else {
+    console.log(email + " String does not contain @ and .")
+}
+}
+
+verifEmail("jon@datadome.co");
+verifEmail("jondatadome.co");
+verifEmail("jon.datadome@co");
