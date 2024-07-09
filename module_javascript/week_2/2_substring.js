@@ -20,3 +20,12 @@ if(newString.includes("Biarritz")) {
     let biarritzLength = "biarritz".length
     console.log(newString.slice(7, 7+biarritzLength))
 }
+
+// substring function
+
+const extractWord = (sentence, word) => {
+    if(sentence.includes(word)) {
+        return word;
+    }
+}
+console.log(extractWord("I must code everyday", "everyday"));

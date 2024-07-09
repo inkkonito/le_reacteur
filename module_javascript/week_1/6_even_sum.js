@@ -29,3 +29,18 @@ if (i%2 === 0) {
 }
 }
 console.log("Le total est de : " + total);
+
+const sumPairs = (min, max) => {
+    let sum = 0;
+    for (min; min <max; min++) {
+        if (min%2 === 0) {
+            console.log("Init Sum is " + sum);
+            console.log("Next even number is " + min)
+            sum += min;
+            console.log("New sum is " + sum )
+        }
+    }
+    return sum
+}
+
+const result = console.log("Final sum is " + sumPairs(20, 30));

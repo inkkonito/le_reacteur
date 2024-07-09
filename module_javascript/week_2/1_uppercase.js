@@ -7,3 +7,9 @@ console.log(stringUppercase); // logging new variable
 let string2 = "I love Biarritz";
 string2 = string2.toUpperCase();
 console.log(string2);
+
+
+const toUppercase = (text) => { 
+    return text.toUpperCase();
+}
+console.log(toUppercase("welcome"));

@@ -20,3 +20,14 @@ for(let i = 1; i <= 20; i++) {
          console.log(i);
     }
 }
+
+const oddsOnly = (min, max) => {
+    console.log(`Output all odds number starting from ${min} up to ${max}`)
+    for (let i=min; i<=max; i++) {
+        if (i%2 !== 0) {
+            console.log(i);
+        }
+    }
+}
+oddsOnly(10, 20); 
+oddsOnly(20, 30); 

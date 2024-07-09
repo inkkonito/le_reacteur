@@ -11,3 +11,4 @@ const timeLived = (age) => {
 
 timeLived(30);
 timeLived(37.5);
+

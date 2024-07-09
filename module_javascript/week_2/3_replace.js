@@ -7,3 +7,11 @@ let stringModified = string.replace("everyone", "nobody");
 console.log(stringModified);
 
 console.log(string.replace("Hello", "Goodbye"));
+
+// function replace
+
+const replaceText = (sentence, word, newWord) => {
+    return sentence.replace(word, newWord)
+}
+
+console.log(replaceText("Coding two hours a day is important", "important", "mandatory"));

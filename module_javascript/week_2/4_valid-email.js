@@ -36,3 +36,8 @@ const verifEmail = (email) => {
 verifEmail("jon@datadome.co");
 verifEmail("jondatadome.co");
 verifEmail("jon.datadome@co");
+
+
+const isEmailValid = (email) => {
+    
+}

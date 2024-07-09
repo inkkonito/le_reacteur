@@ -35,3 +35,23 @@ if (e > f && e > g) {
 } else {
     console.log("G est le plus grand");
 }
+
+// practicing even more
+
+let num1 = 18;
+let num2 = 250
+let num3 = 30
+let num4 = 29;
+
+const highestNumber = (numOne, numTwo, numThree, numFour) => {
+if (numOne > numTwo && numOne > numThree && numOne > numFour) {
+    console.log(numOne + " is the highest number compare to " + numTwo + " " + numThree + " " + numFour)
+} else if (numTwo > numOne && numTwo > numThree && numTwo > numFour) {
+    console.log(numTwo + " is the highest number compare to " + numOne + " " + numThree + " " + numFour)
+} else if (numThree > numOne && numThree > numTwo && numThree > numFour) {
+    console.log(numThree + " is the highest number compare to " + numOne + " " + numTwo + " " + numFour)
+} else {
+   console.log(numFour + " is the highest number compare to " + numOne + " " + numTwo + " " + numThree)
+}
+}
+highestNumber(num1, num2, num3, num4)
