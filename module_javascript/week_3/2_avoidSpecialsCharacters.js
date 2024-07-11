@@ -11,5 +11,25 @@ const removeSpecialCharacters = (str) => {
     }
     return newString + " is trimmed from special characters";
 }
-let result = removeSpecialCharacters("test@");
-console.log(result);
+/* let result = removeSpecialCharacters("test@");
+console.log(result); */
+
+// redo
+
+const onlyAlphaNumerical = (str) => {
+    let newString = ""
+    let reg = /[a-z0-9]/i
+    for (let i=0; i<str.length; i++) {
+    if (reg.test(str[i])) {
+        newString+= str[i]
+    }
+}
+    return newString
+}   
+
+console.log(onlyAlphaNumerical("blabla"));
+console.log(onlyAlphaNumerical("!no"));
+
+const testAlphaNumerical = (str) => {
+
+}
