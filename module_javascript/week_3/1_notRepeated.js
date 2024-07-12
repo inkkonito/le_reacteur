@@ -1,3 +1,4 @@
+/*
 const notRepeated = (string) => {
   for (let i=0; i < string.length; i++) {
     if ((string.toLowerCase().indexOf(string[i]), string.toLowerCase().indexOf(string[i] + 1) === -1)) {
@@ -32,3 +33,18 @@ const getLetterNotRepeated = (string) => {
 }
 
 console.log(getLetterNotRepeated("aabbccddeefiiooee")); // Sortie: "f" // should return f
+
+*/
+
+// redo 
+
+
+const letterNotRepeated = (phrase) => {
+for (let i=0; i<phrase.length; i++) {
+    if (phrase.indexOf(phrase[i]) === phrase.lastIndexOf(phrase[i])) {
+        return phrase[i]
+    }
+}
+return null
+}
+console.log(letterNotRepeated("babar")); // must return R
