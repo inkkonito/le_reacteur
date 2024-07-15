@@ -1,11 +1,20 @@
-const invert = (obj) => {
-    const newObj = {}
-    const keys = Object.keys(obj);
-    const values = Object.values(obj);
-    for (let i=0; i<values.length; i++) {
-        newObj[values[i]] = keys[i];
-    }
-    return newObj
-}
-
-console.log(invert({ name: "John", age: 32}))
+const usersLists = [
+    [
+      { name: "Alice", age: 24 },
+      { name: "Bob", age: 31 },
+      { name: "Charlie", age: 27 },
+      { name: "David", age: 20 }
+    ],
+    [
+      { name: "John", age: 34 },
+      { name: "Lucas", age: 45 },
+      { name: "Bill", age: 19 },
+      { name: "Max", age: 24 }
+    ],
+    [
+      { name: "Lawrence", age: 13 },
+      { name: "Charles", age: 37 }
+    ]
+  ]
+  
+  console.log(usersLists[0][1])
