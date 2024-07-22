@@ -118,3 +118,68 @@ console.log(arrM); // return [3,5]
 // push
 console.log(arrM.push("hello")); // return 3
 console.log(arrM); // return [3,5, "hello"]
+
+// reduce
+let arrN = [1,2,3,4] // sum = 10
+arrN = arrN.reduce((accu, currentValue) => accu + currentValue);
+console.log(arrN);
+
+// redudeRight
+
+// reverse
+
+let arrO = [1,2,3];
+arrO.reverse();
+console.log(arrO) // return 3,2,1
+
+// shift
+
+console.log(arrO.shift()); // return 3 (first item removed)
+console.log(arrO); // return 2,1
+
+// slice
+
+let arrP = [3,6,9,12,15];
+arrP = arrP.slice(1, 3); // 1 = 6 & 3 = 12
+console.log(arrP) // return 6 & 9
+
+// some
+console.log(arrP.some(elem => {
+    console.log(elem)
+    return elem%2 ===0 // is pair? yes 6 is pair so true
+}))
+
+// sort
+let arrQ = [9, 3, 2];
+arrQ.sort(); // sorted ascending
+console.log(arrQ); // return [2,3,9]
+
+// splice
+arrQ.splice(0, 1, "hi") 
+console.log(arrQ); // return ["hi", 3,9]
+
+// toReversed
+
+arrQ = arrQ.toReversed();
+console.log(arrQ); // returns [9,3, "hi"];
+
+// toSpliced
+
+// toString
+arrQ = arrQ.toString();
+console.log(typeof arrQ); // string
+
+// unshift
+let arrR = ["hi", "good morning"]
+console.log(arrR.unshift("bye")) // return 3 (new array length)
+console.log(arrR); // return ["bye"] in first position
+
+// values
+let arrRIterator = arrR.values();
+for (let values of arrRIterator) {
+    console.log(values) // show values
+}
+
+// with
+arrR = arrR.with(2, "good bye");
+console.log(arrR);
