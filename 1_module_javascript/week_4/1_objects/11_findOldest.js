@@ -1,4 +1,4 @@
-const findOldest = (arr) => {
+/* const findOldest = (arr) => {
     let oldestPerson = arr[0].age
     let oldestPersonIndex = 0
     for (let i=1; i<arr.length; i++) {
@@ -12,7 +12,7 @@ const findOldest = (arr) => {
 
 console.log(findOldest([{ name: "Lisa", age: 32}, { name: "Jon", age: 240}]))
 
-
+*/
 
 
 
@@ -39,3 +39,26 @@ const findOldestPerson = (array) => {
   
   console.log(findOldestPerson(users)); // Doit afficher { name: "Bob", age: 31 }
   */
+
+
+  const findOldestPerson = (array) => {
+    let oldestAge = 0;
+    let resultIndex;
+    for (let i=0; i<array.length; i++) {
+        if(users[i].age > oldestAge)
+        {
+            oldestAge = users[i].age;
+            resultIndex = i;
+        } 
+    }
+    return array[resultIndex]
+  }
+  
+  const users = [
+    { name: "Marc", age: 29 },
+    { name: "Jon", age: 4 },
+    { name: "Eric", age: 27 },
+    { name: "Dam", age: 19 }
+  ]
+  
+  console.log(findOldestPerson(users)); // Doit afficher { name: "Bob", age: 31 }
