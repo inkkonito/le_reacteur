@@ -13,3 +13,11 @@ person.age = 27;
 // const key = "age";
 // person[key] = 21
 console.log(person);
+
+
+const freddie = {
+  name : "freddie"
+}
+freddie["color"] = "tabby";
+freddie.age=5
+console.log(freddie);
