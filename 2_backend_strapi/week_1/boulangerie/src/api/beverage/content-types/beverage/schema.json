@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beverages",
+  "info": {
+    "singularName": "beverage",
+    "pluralName": "beverages",
+    "displayName": "Beverage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 10
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "water",
+        "soda",
+        "alcool"
+      ],
+      "default": "water"
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 1
+    },
+    "volume": {
+      "type": "integer",
+      "default": 33
+    },
+    "price": {
+      "type": "decimal",
+      "default": 3
+    }
+  }
+}

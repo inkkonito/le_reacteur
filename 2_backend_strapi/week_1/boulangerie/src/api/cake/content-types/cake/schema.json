@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cakes",
+  "info": {
+    "singularName": "cake",
+    "pluralName": "cakes",
+    "displayName": "Cake",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "maxLength": 25,
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "max": 150,
+      "required": true,
+      "min": 0.5
+    },
+    "expirationDate": {
+      "type": "date"
+    }
+  }
+}
