@@ -23,6 +23,12 @@
     "seats": {
       "type": "json",
       "required": true
+    },
+    "tickets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ticket.ticket",
+      "mappedBy": "event"
     }
   }
 }

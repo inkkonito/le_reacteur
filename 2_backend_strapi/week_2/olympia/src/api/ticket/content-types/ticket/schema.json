@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ticket",
     "pluralName": "tickets",
-    "displayName": "Ticket"
+    "displayName": "Ticket",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -35,8 +36,9 @@
     },
     "event": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::event.event"
+      "relation": "manyToOne",
+      "target": "api::event.event",
+      "inversedBy": "tickets"
     }
   }
 }
