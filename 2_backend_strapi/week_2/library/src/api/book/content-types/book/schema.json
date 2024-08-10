@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "book",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "books"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "fantasy",
+        "thriller",
+        "comics",
+        "biography"
+      ]
+    },
+    "currentOwner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::loan.loan",
+      "inversedBy": "book"
+    }
+  }
+}
