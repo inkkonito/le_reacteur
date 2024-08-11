@@ -19,9 +19,6 @@
     "startDate": {
       "type": "date"
     },
-    "duration": {
-      "type": "integer"
-    },
     "returned": {
       "type": "boolean",
       "default": false,

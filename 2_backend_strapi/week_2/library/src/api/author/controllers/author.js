@@ -19,7 +19,7 @@ module.exports = createCoreController("api::author.author", ({ strapi }) => ({
       { populate: ["books"] }
     );
 
-    // on boucle sur les livres et les supprimes e
+    // on boucle sur les livres et les supprimes 
     for (let i = 0; i < getAuthor.books.length; i++) {
       await strapi.entityService.delete(
         "api::book.book",

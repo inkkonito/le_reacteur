@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use strict";
 
 /**
@@ -15,14 +16,20 @@ module.exports = createCoreController("api::loan.loan", ({ strapi }) => ({
       book,
       { populate: ["currentOwner"] }
     );
-    if (!bookDetails.currentOwner) {
-      return "Nan";
-    } else {
-      return "yes";
+    if (bookDetails.currentOwner) {
+      // if currentOwner exist
+      return "Book is not available";
     }
 
-    /* const {meta, data} = super.create(ctx)
-        return {meta, data}
-       */
+    await strapi.entityService.update("api::book.book", book, {
+      data: {
+        currentOwner: book.name,
+      },
+    });
+    const { meta, data } = await super.create(ctx);
+    return { meta, data };
   },
+  async update(ctx) {
+    
+  }
 }));

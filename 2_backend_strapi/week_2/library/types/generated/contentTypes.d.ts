@@ -877,7 +877,6 @@ export interface ApiLoanLoan extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     startDate: Attribute.Date;
-    duration: Attribute.Integer;
     returned: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;
