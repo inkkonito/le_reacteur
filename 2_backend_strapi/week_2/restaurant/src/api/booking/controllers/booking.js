@@ -57,7 +57,4 @@ module.exports = createCoreController("api::booking.booking", ({ strapi }) => ({
       return { message: error.message };
     }
   },
-  async delete(ctx) {
-    
-  }
 }));
