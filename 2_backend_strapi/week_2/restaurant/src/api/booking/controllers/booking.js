@@ -18,6 +18,22 @@ module.exports = createCoreController("api::booking.booking", ({ strapi }) => ({
         "api::restaurant.restaurant",
         restaurant
       );
+
+      let getAllRestaurants = await strapi.entityService.findMany(
+        "api::restaurant.restaurant"
+      );
+      getAllRestaurants = getAllRestaurants.map((restaurant) => restaurant.id);
+
+      if (!getRestaurant) {
+        return ctx.badRequest("This restaurant does not exist", {
+          seatsRequested: seats,
+          restaurantRequested: restaurant,
+          restaurantsAvailable: {
+            getAllRestaurants,
+          },
+        });
+      }
+
       const getTables = getRestaurant.tables; // storing tables available in variable
 
       const findingTable = getTables.find((table) => table.capacity >= seats);
@@ -26,7 +42,6 @@ module.exports = createCoreController("api::booking.booking", ({ strapi }) => ({
         console.log(
           `Table found: ID ${findingTable.id} with capacity ${findingTable.capacity}`
         );
-
         const tableToUpdate = getTables.find(
           (table) => table.id === findingTable.id
         );
