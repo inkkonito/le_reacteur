@@ -1,0 +1,62 @@
+/** css base */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin: 30px 0px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 20px 0px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 30px;
+}
+
+/** sections */
+
+header {
+  background-color: #333333;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.profile {
+  margin: 20px;
+  border: 3px dotted #000;
+  padding: 20px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+section {
+  margin: 20px;
+}
+
+.competences > ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+.competences > ul > li {
+  padding: 10px 0;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+}
