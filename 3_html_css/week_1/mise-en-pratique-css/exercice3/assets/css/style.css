@@ -1,0 +1,118 @@
+body {
+  background: black;
+  color: #f7dda4;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+.wrapper {
+  width: 1024px;
+  margin: 0px auto;
+  background: #454d5c;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: #f7dda4;
+  font-weight: bold;
+}
+/* header */
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+
+header > div {
+  text-align: end;
+}
+
+#header {
+  margin-bottom: 10px;
+}
+
+/* main  */
+h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main > div {
+  margin: 0px auto;
+}
+
+main > div img {
+  border: 4px solid white;
+  width: 30%;
+  margin: 0px 10px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* section ingredients  */
+
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.ingredetiens {
+  margin-bottom: 20px;
+}
+
+.ingredients ul {
+  list-style: square;
+  padding-left: 30px;
+}
+
+.cost span:nth-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cost span:last-child {
+  color: coral;
+}
+
+/* footer */
+
+.preparation > h3 span {
+  font-size: 18px;
+  color: coral;
+  font-weight: normal;
+}
+
+.preparation > ol {
+  padding-left: 20px;
+}
+
+.preparation > ol > li {
+  line-height: 50px;
+}
+
+.preparation > ol > li > span {
+  background: #557582;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-weight: bold;
+}
+
+/* footer */
+
+footer p {
+  padding: 20px;
+  text-align: center;
+}
+footer p span {
+  font-weight: bold;
+}

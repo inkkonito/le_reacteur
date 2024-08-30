@@ -1,0 +1,33 @@
+body {
+  padding-top: 20px;
+}
+.wrapper {
+  width: 1024px;
+  border: 1px dotted black;
+  margin: 0px auto;
+  padding: 30px 10px 10px 10px;
+}
+.box1 {
+  background-color: lightblue;
+  text-align: center;
+  padding: 20px 0px;
+  border: 2px solid blue;
+  margin-bottom: 20px;
+}
+.box2 {
+  background-color: lightcoral;
+  border: 2px red solid;
+  padding: 20px 0;
+  margin: 0px 20px;
+  text-align: center;
+}
+.box3 {
+  border: 2px solid green;
+  margin-top: 20px;
+  padding: 10px;
+}
+.box3 p {
+  padding: 20px;
+  background-color: lightgreen;
+  text-align: center;
+}
