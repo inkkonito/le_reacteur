@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/imgs/tab-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>EasyJet</title>
   </head>
   <body>
     <header>
-      <h1>EasyJet</h1>
+      <img src="./assets/imgs/ej-title.png" alt="" />
       <nav>
         <a href="#">Infos de vol</a>
         <a href="#">Voitures/Autres services</a>
@@ -23,29 +25,38 @@
     </header>
 
     <main>
-      <div>
-        <h2>WORLDWIDE</h2>
-        <p>Voyez encore plus loin à l'étranger.</p>
-        <p>Découvrez l'Europe et au-delà grâce à notre offre de produit de correspondance.</p>
-        <button type="button">En savoir plus</button>
-      </div>
+      <section class="beach-section">
+        <img src="./assets/imgs/beach.jpg" alt="" />
+      </section>
+      <section class="wrapper worldwide worldwide-default">
+        <img src="./assets/imgs/worldwide-img.jpg" alt="worldwide" />
+        <div>
+          <h2>WORLDWIDE</h2>
+          <p>Voyez encore plus loin à l'étranger.</p>
+          <p>Découvrez l'Europe et au-delà grâce à notre offre de produit de correspondance.</p>
+          <button type="button">En savoir plus</button>
+        </div>
+      </section>
 
-      <div>
-        <h2>Cet été, faîtes sauter le crépier !</h2>
-        <p>
-          Cap à l'ouest, bienvenue à Brest ! La perle maritime de la Bretage vous attends, là où l'aveture s'élève comme
-          les marées et où la bonne humeur fait des vagues !
-        </p>
-        <p>
-          Les magnifiques plages de sable fin et les criques isolées invitent à la détente et à la contemplation. Les
-          amateurs de plein air seront ravis de pouvoir profiter des sentiers côtiers pittoresques qui offrent des vues
-          spectaculaires sur l'océan Atlantique.
-        </p>
-        <button type="button">Réservez maintenant</button>
-      </div>
+      <section class="wrapper worldwide2 worldwide-default">
+        <img src="./assets/imgs/bretagne.jpg" alt="bretagne" />
+        <div>
+          <h2>Cet été, faîtes sauter le crépier !</h2>
+          <p>
+            Cap à l'ouest, bienvenue à Brest ! La perle maritime de la Bretage vous attends, là où l'aveture s'élève
+            comme les marées et où la bonne humeur fait des vagues !
+          </p>
+          <p>
+            Les magnifiques plages de sable fin et les criques isolées invitent à la détente et à la contemplation. Les
+            amateurs de plein air seront ravis de pouvoir profiter des sentiers côtiers pittoresques qui offrent des
+            vues spectaculaires sur l'océan Atlantique.
+          </p>
+          <button type="button">Réservez maintenant</button>
+        </div>
+      </section>
     </main>
 
-    <footer>
+    <footer class="wrapper">
       <div>Infos de vol</div>
       <div>Service clientele</div>
       <div>A propos d'EasyJet</div>

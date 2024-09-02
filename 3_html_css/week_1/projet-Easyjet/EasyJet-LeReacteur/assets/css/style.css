@@ -1,0 +1,74 @@
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+/* HEADER STYLE  */
+
+header img {
+  display: inline;
+}
+
+header nav {
+  display: inline;
+}
+header {
+  background-image: url("../imgs/headbar.gif");
+  background-size: cover;
+  height: 60px;
+  font-size: 16px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header button {
+  background: white;
+  padding: 7px 10px;
+  color: #f60;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+/* MAIN STYLE  */
+
+/* BEACH  */
+
+.beach-section img {
+  width: 100vw;
+  height: 650px;
+  object-fit: cover;
+}
+
+/* WORLDWIDE-DEFAULT  */
+
+.worldwide-default > div {
+  background-color: lightcoral;
+}
+/* WORLDWIDE SECTION  */
+
+.worldwide img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: right top;
+  display: block;
+}
+
+/* BRETAGNE SECTION  */
+
+.worldwide2 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: right top;
+  display: block;
+}
