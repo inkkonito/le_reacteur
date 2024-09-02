@@ -1,12 +1,15 @@
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 h2 {
   font-size: 16px;
   margin-bottom: 20px;
+}
+
+* {
+  box-sizing: border-box;
 }
 /* HEADER STYLE  */
 
@@ -42,6 +45,9 @@ header button {
 
 /* BEACH  */
 
+.beach-section {
+  margin-bottom: 20px;
+}
 .beach-section img {
   width: 100vw;
   height: 650px;
@@ -50,8 +56,26 @@ header button {
 
 /* WORLDWIDE-DEFAULT  */
 
+.worldwide-default {
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #bbbbbb;
+}
 .worldwide-default > div {
-  background-color: lightcoral;
+  padding: 10px;
+}
+
+.worldwide-default p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.worldwide-default button {
+  color: white;
+  padding: 8px 30px;
+  background: #f60;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
 }
 /* WORLDWIDE SECTION  */
 
@@ -71,4 +95,105 @@ header button {
   object-fit: cover;
   object-position: right top;
   display: block;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #f2f2f2;
+}
+footer > div {
+  padding: 10px 0;
+}
+
+/* BOOKING-MENU */
+
+.booking-menu {
+  border: 1px solid black;
+  height: 450px;
+  width: 300px;
+  font-size: 13px;
+  padding: 12px;
+}
+
+.checkbox {
+  margin-bottom: 10px;
+}
+
+.checkbox input {
+  width: 30px;
+  height: 30px;
+}
+
+.booking-menu > button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* DESTINATION */
+
+.destination {
+  border: 1px solid lightgray;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.destination input {
+  border: none;
+  height: 30px;
+}
+.destination-line {
+  width: 180px;
+  border-bottom: 1px solid lightgray;
+  margin: 10px auto;
+}
+
+/* DATE PICKER */
+
+.date-picker {
+  border: 1px solid lightgray;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #f60;
+}
+
+.date-picker div {
+  width: 180px;
+  border-bottom: 1px solid lightgray;
+  margin: 10px auto;
+}
+
+.date-picker p {
+  padding: 7px;
+}
+
+/* QUANTITY  */
+
+.quantity > div > span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.quantity button {
+  background: unset;
+  border: none;
+  font-size: 20px;
+}
+.quantity div {
+  padding: 5px;
+}
+
+/* BOTTOM */
+
+.bottom {
+  color: #f60;
+}
+
+.bottom p:first-child {
+  margin-bottom: 5px;
 }
