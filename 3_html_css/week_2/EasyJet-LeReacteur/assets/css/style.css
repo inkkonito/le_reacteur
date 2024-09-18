@@ -63,12 +63,63 @@ header button {
   object-fit: cover;
 }
 
+/* CARROUSEL-SECTION */
+
+.carrousel-section {
+  height: 380px;
+  margin-bottom: 20px;
+  display: flex;
+  overflow: scroll;
+  gap: 20px;
+  padding: 0 5px;
+}
+
+.carrousel-card {
+  position: relative;
+  height: 370px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 0 5px grey;
+}
+
+.carrousel-card img {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carrousel-card > div {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.carrousel-card button {
+  position: absolute;
+  bottom: 15px;
+  background-color: #f60;
+  color: white;
+  font-size: 15px;
+  border-radius: 15px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px;
+}
 /* WORLDWIDE-DEFAULT  */
 
 .worldwide-default {
   margin-bottom: 20px;
   box-shadow: 0 0 5px #bbbbbb;
   display: flex;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .worldwide-default img {
@@ -222,7 +273,28 @@ footer > div {
   justify-content: space-around;
   margin-bottom: 50px;
 }
+.triple-img > div {
+  position: relative;
+}
+.triple-img-absolute {
+  position: absolute;
+  top: 0px;
+  height: 220px;
+  width: 285px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
+.triple-img-absolute h4 {
+  font-size: 30px;
+  color: white;
+}
+.triple-img-absolute p {
+  font-size: 20px;
+  color: white;
+}
 .triple-img img {
   border-radius: 10px;
   display: block;
@@ -232,6 +304,39 @@ footer > div {
   box-shadow: 0 0 5px #bbbbbb;
 }
 
+/* BOTTOM-CARROUSEL */
+.bottom-carrousel {
+  margin-bottom: 20px;
+}
+.bottom-carrousel h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.bottom-carrousel > menu {
+  border: 1px solid blue;
+  display: flex;
+  overflow: scroll;
+  gap: 10px;
+}
+.bottom-carrousel div {
+  height: 145px;
+  width: 145px;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: #333;
+  color: white;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.bottom-carrousel div:hover {
+  background: #f70;
+  cursor: pointer;
+}
 /* BOTTOM */
 
 .footer-div {
