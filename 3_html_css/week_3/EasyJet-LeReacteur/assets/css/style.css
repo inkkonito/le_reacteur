@@ -7,7 +7,7 @@ footer,
 }
 
 .wrapper {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -168,13 +168,14 @@ header button {
 
 .beach-white-absolute {
   position: absolute;
-  height: 130px;
+  height: 140px;
   bottom: 0px;
   width: 100vw;
   background-color: rgb(255, 255, 255, 0.7);
 }
 .wrapper-whitebar {
   height: 100%;
+  padding: 5px 0;
 }
 
 .offers {
@@ -182,6 +183,7 @@ header button {
   justify-content: space-between;
   gap: 20px;
 }
+
 .offers button {
   background-color: #f60;
   color: white;
@@ -189,10 +191,16 @@ header button {
   border-radius: 3px;
   border: none;
   padding: 10px 30px;
+  margin: 5px 0;
 }
 
-.offers > * {
+.offer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: self-start;
   width: 20%;
+  flex: 1;
 }
 /* WORLDWIDE-DEFAULT  */
 
@@ -435,6 +443,7 @@ footer > div {
 /* BOTTOM */
 
 .footer-div {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -470,14 +479,32 @@ footer > div {
 /* MEDIA QUERIES */
 
 @media (max-width: 1115px) {
-  /* header */
   .hidden-1115 {
     display: none;
   }
 }
 
 @media (max-width: 960px) {
-  /* header */
+  .worldwide-default {
+    flex-direction: column;
+    width: 630px;
+  }
+  .triple-img {
+    width: 630px;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .triple-img > div:nth-child(3),
+  .triple-img > div:nth-child(3) img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .padding-960 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -486,5 +513,39 @@ footer > div {
   }
   .hidden-670 {
     display: none;
+  }
+  .booking-menu-container {
+    justify-content: center;
+  }
+  .visibility-hidden {
+    visibility: hidden;
+  }
+  .beach-section {
+    background-color: #f2f2f2;
+  }
+  .beach-white-absolute {
+    background-color: white;
+  }
+  .footer-div {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  .worldwide-default {
+    width: 300px;
+  }
+  .triple-img {
+    width: auto;
+    overflow: scroll;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 20px;
+  }
+  .triple-img > div:nth-child(3) {
+    width: auto;
+  }
+  .triple-img > div:nth-child(3) img {
+    width: 285px;
   }
 }
