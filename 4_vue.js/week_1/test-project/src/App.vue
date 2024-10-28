@@ -1,6 +1,6 @@
 <template>
   <p v-bind:id="`p-${count}`" v-show="count > 0">
-    <span :style="{ color: count > 8 ? 'red' : 'blue' }">Compteur :</span>
+    <span :style="{ color: count >  ? 'red' : 'blue' }">Compteur :</span>
     <span :class="{ active: count < 3 }">{{ count }}</span>
   </p>
   <div v-if="count >= 5">Bravo vous avez cliqué plus de 5 fois</div>

@@ -1,0 +1,30 @@
+@import './base.css';
+* {
+  box-sizing: border-box;
+}
+:root {
+  --footer-height: 60px;
+  --yellow: #ffb928;
+  --header-height: 90px;
+}
+body {
+  font-family: Arial;
+}
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: underline var(--yellow);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
