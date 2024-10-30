@@ -22,3 +22,9 @@ h2 {
   margin-bottom: 10px;
   font-size: 22px;
 }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+}
