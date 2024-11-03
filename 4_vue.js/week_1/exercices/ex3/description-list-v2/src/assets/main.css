@@ -26,3 +26,17 @@ p {
   line-height: 20px;
   margin-bottom: 5px;
 }
+
+/* media query */
+
+@media (max-width: 1250px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 695px) {
+  h1 {
+    font-size: 35px;
+  }
+}

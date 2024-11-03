@@ -2,9 +2,20 @@
 const props = defineProps({
   firstname: String,
   lastname: String,
+  gender: String,
 })
 </script>
 <template>
-  <h2>{{ firstname }} {{ lastname }}</h2>
+  <h2
+    :class="{
+      isFemale: gender === 'female',
+    }"
+  >
+    {{ firstname }} {{ lastname }}
+  </h2>
 </template>
-<style scoped></style>
+<style scoped>
+.isFemale {
+  color: orange;
+}
+</style>

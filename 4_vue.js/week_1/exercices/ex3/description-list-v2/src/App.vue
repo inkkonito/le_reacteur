@@ -82,4 +82,16 @@ main > div {
   display: flex;
   gap: 20px;
 }
+
+/* media queries  */
+
+@media (max-width: 1250px) {
+  /* main {
+    background-color: red;
+  } */
+  main > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 </style>

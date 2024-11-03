@@ -16,6 +16,7 @@ const props = defineProps({ personInfos: Object })
       <Title
         :firstname="personInfos.firstname"
         :lastname="personInfos.lastname"
+        :gender="personInfos.gender"
       />
       <FirstParagraph
         :gender="personInfos.gender"
@@ -39,7 +40,7 @@ section {
   background-color: #eeeeee;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 7px #eee;
+  box-shadow: 0 0 7px v-bind('personInfos.favoriteColor');
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,5 +54,12 @@ section > img {
 svg {
   align-self: flex-end;
   color: grey;
+}
+/* // media queries //  */
+@media (max-width: 1250px) {
+  section {
+    flex: none;
+    width: 275px;
+  }
 }
 </style>
