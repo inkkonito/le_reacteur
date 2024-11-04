@@ -1,0 +1,82 @@
+[
+  {
+    "species": "Chien",
+    "name": "WoinWoin",
+    "description": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis est, saepe quibusdam laboriosam tempore ad hic aspernatur inventore eaque voluptate ducimus! Harum ev",
+    "alreadyAdopted": false,
+    "gender": "male",
+    "age": 5
+  },
+  {
+    "species": "Chat",
+    "name": "Peanut",
+    "description": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis est, saepe tempore ad hic aspernatur inventore eaque voluptate ducimus! Harum eveniet adipisci neque blanditiis vitae eius! ",
+    "alreadyAdopted": true,
+    "gender": "male",
+    "age": 1
+  },
+  {
+    "species": "Chien",
+    "name": "Louping",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis est, tempore ad hic aspernatur inventore eaque voluptate ducimus! Harum eveniet adipisci neque blanditiis vitae eius!",
+    "alreadyAdopted": true,
+    "gender": "female",
+    "age": 3
+  },
+  {
+    "species": "Chien",
+    "name": "Samba",
+    "description": "Adipisicing elit. Quam reiciendis est, saepe quibusdam laboriosam tempore ad hic aspernatur inventore eaque voluptate ducimus! Harum eveniet adipisci neque blanditiis vitae eius!",
+    "alreadyAdopted": false,
+    "gender": "female",
+    "age": 10
+  },
+  {
+    "species": "Furet",
+    "name": "Unix",
+    "description": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis est, aspernatur inventore eaque voluptate ducimus! Harum eveniet adipisci neque blanditiis vitae eius!",
+    "alreadyAdopted": false,
+    "gender": "female",
+    "age": 2
+  },
+  {
+    "species": "Cochon",
+    "name": "Kirikou",
+    "description": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis est, saepe quibusdam laboriosam tempore ad hic aspernatur inventore eaque voluptate ducimus! ",
+    "alreadyAdopted": true,
+    "gender": "male",
+    "age": 1
+  },
+  {
+    "species": "Chinchila",
+    "name": "Boulette",
+    "description": " Lorem sit amet consectetur, adipisicing elit. Quam reiciendis est, saepe quibusdam laboriosam tempore ad hic eaque voluptate ducimus! Harum eveniet adipisci neque blanditiis vitae eius!",
+    "alreadyAdopted": false,
+    "gender": "female",
+    "age": 5
+  },
+  {
+    "species": "Lapin",
+    "name": "Ponpon",
+    "description": " Lorem sit amet consectetur, adipisicing elit. Quam reiciendis est, saepe quibusdam laboriosam tempore ad hic eaque voluptate ducimus! Harum eveniet adipisci neque blanditiis vitae eius!",
+    "alreadyAdopted": false,
+    "gender": "male",
+    "age": 2
+  },
+  {
+    "species": "Perroquet",
+    "name": "Gabi",
+    "description": " Lorem sit amet consectetur, adipisicing elit. Quam reiciendis est, saepe quibusdam laboriosam tempore ad hic eaque voluptate ducimus! Harum eveniet adipisci neque blanditiis vitae eius!",
+    "alreadyAdopted": false,
+    "gender": "male",
+    "age": 7
+  },
+  {
+    "species": "Chat",
+    "name": "Bongo",
+    "description": " Lorem sit amet consectetur, adipisicing elit. Quam reiciendis est, saepe quibusdam laboriosam tempore ad hic eaque voluptate ducimus! Harum eveniet adipisci neque blanditiis vitae eius!",
+    "alreadyAdopted": false,
+    "gender": "female",
+    "age": 15
+  }
+]
