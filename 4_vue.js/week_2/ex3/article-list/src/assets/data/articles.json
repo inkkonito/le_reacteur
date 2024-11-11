@@ -1,0 +1,172 @@
+{
+  "frontPage": {
+    "id": 123,
+    "title": "La fin de l'énigme pour les « îles magiques » de Titan, la lune de Saturne ?",
+    "teaser": "En 2014, les sondages radar de la sonde Cassini révélaient des structures transitoires et mystérieuses à la surface des mers et lacs d'hydrocarbure de Titan, la plus grosse lune de Saturne, et dans le Système solaire. Une équipe de planétologues pense avoir la solution de l'énigme, qui serait comparable au vêlage sur Terre.",
+    "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662350/RNCP31114/cours-vue/exos-sem-2/article-list-futura/titan_lac_NASA_bj8jdv.avif",
+    "category": "sciences",
+    "subCategory": "actualités"
+  },
+  "articlesList": [
+    {
+      "id": 124,
+      "title": "La Nasa détecte un mystérieux signal « inattendu » venant de l’extérieur de notre Galaxie",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662348/RNCP31114/cours-vue/exos-sem-2/article-list-futura/rayonnement-gamma-inattendu_a1oyl5.avif",
+      "date": "15/01/2024",
+      "category": "sciences",
+      "subCategory": "univers"
+    },
+    {
+      "id": 125,
+      "title": "Une machine à gravité pour préparer les missions à destination des astéroïdes",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662347/RNCP31114/cours-vue/exos-sem-2/article-list-futura/OsirisRex_SR_Nasa_bq3wgb.avif",
+      "date": "14/01/2024",
+      "category": "sciences",
+      "subCategory": "exploration"
+    },
+    {
+      "id": 142,
+      "title": "Le projet le plus fou de la décennie ? Dubaï va construire une Lune artificielle pour 5 milliards de dollars !",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662344/RNCP31114/cours-vue/exos-sem-2/article-list-futura/Dubai_fafqf8.avif",
+      "date": "30/09/2023",
+      "category": "maison",
+      "subCategory": "architecture"
+    },
+    {
+      "id": 126,
+      "title": "Pourquoi fait-il chaud le jour et froid la nuit dans le désert ?",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662346/RNCP31114/cours-vue/exos-sem-2/article-list-futura/Libya_dessert_uksjpw.avif",
+      "date": "14/01/2024",
+      "category": "planete",
+      "subCategory": "climatologie"
+    },
+    {
+      "id": 141,
+      "title": "Comment se mettre au compost : idées reçues et astuces",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662344/RNCP31114/cours-vue/exos-sem-2/article-list-futura/dechets-organiques_vaxylc.avif",
+      "date": "02/01/2024",
+      "category": "maison",
+      "subCategory": "recyclage"
+    },
+    {
+      "id": 128,
+      "title": "Pourquoi le Soleil se lève-t-il à l'est ?",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662345/RNCP31114/cours-vue/exos-sem-2/article-list-futura/lever-de-soleil_npaesd.avif",
+      "date": "13/01/2024",
+      "category": "sciences",
+      "subCategory": "astronomie"
+    },
+    {
+      "id": 129,
+      "title": "Des centaines de nuages de gaz éjectés de la Voie lactée découverts par hasard",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662346/RNCP31114/cours-vue/exos-sem-2/article-list-futura/nuages-gaz_zaymdy.avif",
+      "date": "12/01/2024",
+      "category": "sciences",
+      "subCategory": "univers"
+    },
+    {
+      "id": 138,
+      "title": "Bientôt une appli pour soulager les acouphènes ?",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662338/RNCP31114/cours-vue/exos-sem-2/article-list-futura/acouphe%CC%80nes_llhxbk.avif",
+      "date": "16/01/2024",
+      "category": "sante",
+      "subCategory": "oreille interne"
+    },
+    {
+      "id": 139,
+      "title": "La réalité virtuelle et l’IA pour améliorer la sante mentale des astronautes et des patients",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662339/RNCP31114/cours-vue/exos-sem-2/article-list-futura/astronautes_ki4qlj.avif",
+      "date": "13/01/2024",
+      "category": "tech",
+      "subCategory": "réalité virtuelle"
+    },
+    {
+      "id": 130,
+      "title": "Le télescope James-Webb observe un phénomène qui ne devrait pas exister sur cette « étoile ratée »",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662341/RNCP31114/cours-vue/exos-sem-2/article-list-futura/aurores-naines-brunes_el3kym.avif",
+      "date": "10/01/2024",
+      "category": "sciences",
+      "subCategory": "univers"
+    },
+    {
+      "id": 131,
+      "title": "Découverte de 23 tablettes d’un mystérieux calendrier dans une tombe de 2 000 ans en Chine",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662341/RNCP31114/cours-vue/exos-sem-2/article-list-futura/calendrier-ancien_iri535.avif",
+      "date": "10/01/2024",
+      "category": "sciences",
+      "subCategory": "homme"
+    },
+    {
+      "id": 140,
+      "title": "Finies les corvées : ce robot sait faire presque toutes les tâches ménagères",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662349/RNCP31114/cours-vue/exos-sem-2/article-list-futura/robotmenager_dzrc3q.avif",
+      "date": "10/01/2024",
+      "category": "tech",
+      "subCategory": "robotique"
+    },
+    {
+      "id": 132,
+      "title": "La menace invisible des rivières de méthane sous le permafrost prêtes à inonder l’atmosphère !",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662339/RNCP31114/cours-vue/exos-sem-2/article-list-futura/artcique_e0vbm9.avif",
+      "date": "13/01/2024",
+      "category": "planete",
+      "subCategory": "arctique"
+    },
+    {
+      "id": 133,
+      "title": "L'œil : la vision au-delà de la vision",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662342/RNCP31114/cours-vue/exos-sem-2/article-list-futura/canonique_fmndpt.avif",
+      "date": "13/01/2024",
+      "category": "sante",
+      "subCategory": "médecine"
+    },
+    {
+      "id": 134,
+      "title": "Rare et d’une beauté stupéfiante : un halo rouge qui encercle une aurore australe !",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662339/RNCP31114/cours-vue/exos-sem-2/article-list-futura/Apod-SAR_xz7eco.webp",
+      "date": "13/01/2024",
+      "category": "sciences",
+      "subCategory": "univers"
+    },
+    {
+      "id": 135,
+      "title": "Une journée complète sur Mars ressemble à ça !",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662343/RNCP31114/cours-vue/exos-sem-2/article-list-futura/curiosity-journee-mars_um0qiu.avif",
+      "date": "13/01/2024",
+      "category": "sciences",
+      "subCategory": "mars"
+    },
+    {
+      "id": 136,
+      "title": "Cet écosystème unique nous transporte aux premiers jours de la vie sur Terre !",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662340/RNCP31114/cours-vue/exos-sem-2/article-list-futura/atcama_stromatolites_bbolyo.avif",
+      "date": "07/12/2023",
+      "category": "planete",
+      "subCategory": "terre"
+    },
+    {
+      "id": 137,
+      "title": "Un aimant peut effacer la mémoire d’un disque dur, vrai ou faux ?",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662344/RNCP31114/cours-vue/exos-sem-2/article-list-futura/disque-dur-externe_wi855b.avif",
+      "date": "05/12/2023",
+      "category": "tech",
+      "subCategory": "électronique"
+    },
+    {
+      "id": 150,
+      "title": "L’exercice physique augmente la taille du cerveau",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662348/RNCP31114/cours-vue/exos-sem-2/article-list-futura/randonne%CC%81e_awzbny.avif",
+      "date": "07/01/2024",
+      "category": "sante",
+      "subCategory": "sport"
+    },
+    {
+      "id": 127,
+      "title": "Il y a plus de risques que cet astéroïde frappe la Terre en 2030 qu’en 2024",
+      "image": "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1705662339/RNCP31114/cours-vue/exos-sem-2/article-list-futura/asteroide-collision_xeatdj.avif",
+      "date": "13/01/2024",
+      "category": "sciences",
+      "subCategory": "astéroïde"
+    }
+  ]
+}
