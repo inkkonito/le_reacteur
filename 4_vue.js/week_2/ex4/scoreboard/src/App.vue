@@ -20,17 +20,24 @@ const playersList = ref([
     actualScore: 0,
   },
 ])
-const addOne = (index) => {
-  playersList.value[index].actualScore += 1
-  console.log(playersList.value[index])
+// const addOne = (index) => {
+//   playersList.value[index].actualScore += 1
+//   console.log(playersList.value[index])
+// }
+// const addTwo = (index) => {
+//   playersList.value[index].actualScore += 2
+// }
+// const addFive = (index) => {
+//   playersList.value[index].actualScore += 5
+//   console.log(playersList.value[index])
+// }
+
+const addPoints = (points, index) => {
+  playersList.value[index].actualScore += points
 }
-const addTwo = (index) => {
-  playersList.value[index].actualScore += 2
-}
-const addFive = (index) => {
-  playersList.value[index].actualScore += 5
-  console.log(playersList.value[index])
-}
+
+const pointsList = [1, 2, 5, 10]
+
 const resetScore = () => {
   for (let i = 0; i < playersList.value.length; i++) {
     playersList.value[i].actualScore = 0
@@ -48,15 +55,22 @@ const resetScore = () => {
           <p>Level {{ playersInfos.level }}</p>
         </div>
         <p>
-          {{ playersInfos.gender === 'male' ? 'He' : 'She' }}has already
+          {{ playersInfos.gender === 'male' ? 'He' : 'She' }} has already
           {{ playersInfos.numberOfWin }} victor{{ playersInfos.numberOfWin > 1 ? 'ies' : 'y' }}
         </p>
         <h2>Actual score</h2>
         <p>{{ playersInfos.actualScore }}</p>
         <div>
-          <button @click="addOne(index)">Add 1 point</button>
-          <button @click="addTwo(index)">Add 2 points</button>
-          <button @click="addFive(index)">Add 5 points</button>
+          <button
+            v-for="pointButton in pointsList"
+            :key="pointButton"
+            @click="addPoints(pointButton, index)"
+          >
+            Add {{ pointButton }} points
+          </button>
+          <!-- <button @click="addPoints(1, index)">Add 1 point</button>
+          <button @click="addPoints(2, index)">Add 2 points</button>
+          <button @click="addPoints(5, index)">Add 5 points</button> -->
         </div>
       </section>
     </div>
