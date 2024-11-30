@@ -2,10 +2,12 @@
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    colors: {
-      orangelbc: '#ec5a12',
+    extend: {
+      colors: {
+        orangelbc: '#ec5a12',
+        greylbc: '#F4F9FE',
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
