@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from "vue";
 import { RouterLink } from "vue-router";
+import { formatPrice } from "../utils/formatPrice.js";
 const props = defineProps({
   offerInfos: {
     type: Object,
@@ -18,6 +19,11 @@ const formatDate = computed(() => {
     .split("-")
     .reverse()
     .join("/");
+});
+
+const formatedPrice = computed(() => {
+  const price = props.offerInfos.price;
+  return formatPrice(price);
 });
 </script>
 <template>
@@ -43,7 +49,7 @@ const formatDate = computed(() => {
         alt=""
       />
       <p class="font-bold">{{ offerInfos.title }}</p>
-      <p class="mt-2 font-bold">{{ offerInfos.price }}€</p>
+      <p class="mt-2 font-bold">{{ formatedPrice }}€</p>
     </div>
     <div class="flex items-end justify-between">
       <p>{{ formatDate }}</p>

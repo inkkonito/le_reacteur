@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <header class="z-5 fixed left-0 top-0 h-[110px] w-full border-b-2 bg-white">
+  <header class="fixed left-0 top-0 z-10 h-[110px] w-full border-b-2 bg-white">
     <!-- Header container -->
     <div class="mx-auto flex max-w-[1050px] flex-col justify-between pb-5 pt-5">
       <!-- Top bloc -->

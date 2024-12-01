@@ -24,7 +24,7 @@ onMounted(async () => {
 });
 </script>
 <template>
-  <main class="m-auto mt-[120px] max-w-[1050px]">
+  <div>
     <div>
       <!--  Wait for offers loading -->
       <p v-if="offersList.length === 0" class="">En cours de chargement...</p>
@@ -55,6 +55,6 @@ onMounted(async () => {
         </OfferCard>
       </div>
     </div>
-  </main>
+  </div>
 </template>
 <style scoped></style>

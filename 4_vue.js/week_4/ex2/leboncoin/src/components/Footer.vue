@@ -1,6 +1,8 @@
 <script setup></script>
 <template>
-  <footer class="flex h-12 items-center justify-center bg-lbc_grey_light">
+  <footer
+    class="relative bottom-0 flex h-12 items-center justify-center bg-lbc_grey_light"
+  >
     <p>
       Made by
       <a
