@@ -7,7 +7,7 @@ import BtnPublisherOffer from "./BtnPublisherOffer.vue";
   >
     <img src="../assets/svg/onde-corail.svg" alt="" class="rounded-l-lg" />
     <div class="flex items-center gap-4">
-      <p class="text-lg font-bold">C'est le moment de vendre</p>
+      <p class="text-xl font-bold">C'est le moment de vendre</p>
       <BtnPublisherOffer />
     </div>
     <img src="../assets/svg/feuille-bleue.svg" alt="" class="rounded-r-lg" />

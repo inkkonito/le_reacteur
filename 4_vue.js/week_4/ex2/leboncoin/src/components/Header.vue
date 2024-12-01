@@ -1,8 +1,8 @@
 <script setup></script>
 <template>
-  <header class="border-b-2">
+  <header class="z-5 fixed left-0 top-0 h-[110px] w-full border-b-2 bg-white">
     <!-- Header container -->
-    <div class="mx-auto flex max-w-[1050px] flex-col justify-between pb-5 pt-3">
+    <div class="mx-auto flex max-w-[1050px] flex-col justify-between pb-5 pt-5">
       <!-- Top bloc -->
       <div class="flex items-center justify-between">
         <RouterLink to="/"
@@ -46,7 +46,7 @@
         </div>
       </div>
       <!-- Bottom Bloc -->
-      <div class="mt-4">
+      <div class="mb-2 mt-4">
         <ul class="flex items-center justify-between">
           <li>Immobilier</li>
           <font-awesome-icon :icon="['fas', 'circle']" class="h-1 w-1" />
