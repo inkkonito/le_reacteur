@@ -6,10 +6,10 @@ import App from "./App.vue";
 import router from "./router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faPlus, faSearch, faCircle } from "@fortawesome/free-solid-svg-icons";
-import { faUser, faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faPlus, faSearch, faCircle, faAngleLeft, faAngleRight, faLocationArrow, faCheckDouble } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faHeart, faClock } from "@fortawesome/free-regular-svg-icons";
 
-library.add(faPlus, faSearch, faUser, faCircle, faHeart);
+library.add(faPlus, faSearch,  faUser, faCircle, faHeart, faAngleLeft, faAngleRight, faLocationArrow, faCheckDouble, faClock );
 
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);

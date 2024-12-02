@@ -29,7 +29,7 @@ const formatedPrice = computed(() => {
 <template>
   <RouterLink
     :to="{ name: 'offer', params: { id: id } }"
-    class="block flex flex-col justify-between"
+    class="flex flex-col justify-between"
   >
     <div>
       <div class="flex items-center gap-[5px]">

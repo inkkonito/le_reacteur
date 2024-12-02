@@ -6,7 +6,7 @@
       <!-- Top bloc -->
       <div class="flex items-center justify-between">
         <RouterLink to="/"
-          ><img src="../assets/svg/logo.svg" alt="" class="w-40"
+          ><img src="../assets/svg/logo.svg" alt="" class="w-[140px]"
         /></RouterLink>
         <!-- Top : Middle Part -->
         <div class="flex gap-5">
