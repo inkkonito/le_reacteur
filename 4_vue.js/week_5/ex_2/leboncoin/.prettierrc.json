@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "semi": false,
+  "singleQuote": true,
+  "printWidth": 140,
+  "tailwindStylesheet": "./assets/styles/tailwind.css",
+  "tailwindConfig": "./tailwind.config.js",
+  "htmlWhitespaceSensitivity": "ignore",
+  "prettier.configPath": ".prettierrc.json",
+  "prettier.singleAttributePerLine": true
+}

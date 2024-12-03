@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Support des dernières fonctionnalités JavaScript
+    "module": "ESNext", // Utiliser le module ES pour la compatibilité moderne
+    "moduleResolution": "Node", // Résolution des modules basée sur Node.js
+    "baseUrl": ".", // Définit la racine pour les chemins relatifs
+    "paths": {
+      "@/*": ["./src/*"] // Alias pour des imports plus simples
+    },
+    "jsx": "preserve", // Nécessaire pour JSX si vous utilisez un framework comme React
+    "strict": true // Active des vérifications strictes
+  },
+  "include": [
+    "src/**/*.js", // Inclut tous les fichiers JS dans `src`
+    "src/**/*.vue", // Inclut tous les fichiers Vue
+    "src/**/*.json" // Inclut les fichiers JSON si nécessaires
+  ],
+  "exclude": ["node_modules", "dist"] // Exclut les répertoires générés
+}
