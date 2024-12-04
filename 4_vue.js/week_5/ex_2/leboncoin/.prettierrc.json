@@ -7,5 +7,6 @@
   "tailwindConfig": "./tailwind.config.js",
   "htmlWhitespaceSensitivity": "ignore",
   "prettier.configPath": ".prettierrc.json",
-  "prettier.singleAttributePerLine": true
+  "prettier.singleAttributePerLine": true,
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

@@ -16,7 +16,7 @@ import {
   faCheckDouble,
   faArrowRight,
 } from '@fortawesome/free-solid-svg-icons'
-import { faUser, faHeart, faClock, faEyeSlash } from '@fortawesome/free-regular-svg-icons'
+import { faUser, faHeart, faClock, faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons'
 
 library.add(
   faPlus,
@@ -31,6 +31,7 @@ library.add(
   faClock,
   faEyeSlash,
   faArrowRight,
+  faEye,
 )
 
 const app = createApp(App)
