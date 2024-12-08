@@ -1,7 +1,7 @@
 import './assets/styles/main.css'
 import './assets/styles/tailwind.css'
 
-import { createApp } from 'vue'
+import { createApp, ref } from 'vue'
 import App from './App.vue'
 import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -37,4 +37,17 @@ library.add(
 const app = createApp(App)
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.use(router)
+
+const userInfos = ref({
+  username: '',
+  password: '',
+})
+
+const changeUserInfos = (infos) => {
+  userInfos.value = infos
+}
+
+// creation du provider
+
+app.provide('GlobalStore', { userInfos: userInfos, changeUserInfos: changeUserInfos })
 app.mount('#app')

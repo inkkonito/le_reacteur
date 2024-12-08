@@ -1,8 +1,10 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import { ref } from 'vue'
+import { ref, inject } from 'vue'
 import axios from 'axios'
+import router from '@/router'
 
+const GlobalStore = inject('GlobalStore')
 const email = ref('')
 const password = ref('')
 const isSubmitting = ref(false)
@@ -21,7 +23,13 @@ const handleSubmit = async () => {
         identifier: email.value,
         password: password.value,
       })
-      console.log(data)
+      // console.log(data)
+      GlobalStore.changeUserInfos({
+        username: data.user.username,
+        token: data.jwt,
+      })
+
+      router.push({ name: 'home' })
     } else {
       errorMessage.value = 'Veuillez remplir tous les champs'
     }
@@ -38,7 +46,7 @@ const handleSubmit = async () => {
 </script>
 <template>
   <div
-    class="flex h-[calc(100vh-190px)] items-center justify-center bg-[url('../src/assets/img/illustration.png')] bg-no-repeat bg-contain bg-bottom"
+    class="flex h-[calc(100vh-190px)] items-center justify-center bg-[url('../src/assets/img/illustration.png')] bg-contain bg-bottom bg-no-repeat"
   >
     <div class="flex h-[490px] w-[480px] flex-col justify-between rounded-[15px] bg-white p-[30px] shadow-custom-grey">
       <div>
@@ -69,11 +77,11 @@ const handleSubmit = async () => {
               type="password"
               name="password"
               id="password"
-              class="rounded-tl-[15px] rounded-bl-[15px] flex-1 border-[1px] border-lbc_grey h-[45px] pl-[10px]"
+              class="h-[45px] flex-1 rounded-bl-[15px] rounded-tl-[15px] border-[1px] border-lbc_grey pl-[10px]"
               v-model="password"
             />
             <div
-              class="border-[1px] border-lbc_grey flex items-center border-l-0 text-lbc_grey h-[45px] rounded-tr-[15px] rounded-br-[15px] w-[40px] p-[10px]"
+              class="flex h-[45px] w-[40px] items-center rounded-br-[15px] rounded-tr-[15px] border-[1px] border-l-0 border-lbc_grey p-[10px] text-lbc_grey"
             >
               <font-awesome-icon :icon="['far', 'eye-slash']" />
             </div>
@@ -81,13 +89,13 @@ const handleSubmit = async () => {
         </div>
         <button
           v-if="isSubmitting"
-          class="bg-lbc_orange h-[45px] border-none rounded-[15px] text-white font-bold flex justify-center items-center gap-[15px]"
+          class="flex h-[45px] items-center justify-center gap-[15px] rounded-[15px] border-none bg-lbc_orange font-bold text-white"
         >
           Connexion en cours...
         </button>
         <button
           v-else
-          class="bg-lbc_orange h-[45px] border-none rounded-[15px] text-white font-bold flex justify-center items-center gap-[15px]"
+          class="flex h-[45px] items-center justify-center gap-[15px] rounded-[15px] border-none bg-lbc_orange font-bold text-white"
         >
           Se connecter
           <font-awesome-icon :icon="['fas', 'arrow-right']" />

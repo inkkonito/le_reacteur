@@ -1,9 +1,10 @@
 <script setup>
 import { RouterLink, useRouter } from 'vue-router'
-import { ref, provide } from 'vue'
+import { ref, inject } from 'vue'
 import axios from 'axios'
 
 const router = useRouter()
+const GlobalStore = inject('GlobalStore')
 
 const name = ref('')
 const email = ref('')
@@ -22,7 +23,13 @@ const handlingSubmit = async () => {
         password: password.value,
       })
       console.log(data)
-      router.push('home')
+
+      GlobalStore.changeUserInfos({
+        username: data.user.username,
+        token: data.jwt,
+      })
+
+      router.push({ name: 'home' })
     } catch (error) {
       if (error.response) {
         errorMessage.value = error.response.data.error.message

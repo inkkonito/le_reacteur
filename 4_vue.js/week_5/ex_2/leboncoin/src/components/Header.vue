@@ -1,21 +1,23 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router'
+import { inject } from 'vue'
+
+const GlobalStore = inject('GlobalStore')
+
+console.log(GlobalStore.userInfos.value)
+</script>
 <template>
   <header class="fixed left-0 top-0 z-10 h-[110px] w-full border-b-2 bg-white">
     <!-- Header container -->
-    <div class="mx-auto flex max-w-[1050px] flex-col justify-between pb-5 pt-5">
+    <div class="mx- mx-auto flex max-w-[1050px] flex-col justify-between pb-5 pt-5">
       <!-- Top bloc -->
       <div class="flex items-center justify-between">
-        <RouterLink to="/"
-          ><img src="../assets/svg/logo.svg" alt="" class="w-[140px]"
-        /></RouterLink>
+        <RouterLink to="/"><img src="../assets/svg/logo.svg" alt="" class="w-[140px]" /></RouterLink>
         <!-- Top : Middle Part -->
         <div class="flex gap-5">
           <div>
             <button class="rounded-xl bg-lbc_orange px-4 py-2 font-bold">
-              <font-awesome-icon
-                :icon="['fas', 'plus']"
-                class="mx-1 border-2 p-[1px] text-lg font-bold text-white"
-              />
+              <font-awesome-icon :icon="['fas', 'plus']" class="mx-1 border-2 p-[1px] text-lg font-bold text-white" />
               <span class="text-lg text-white">Déposer une annonce</span>
             </button>
           </div>
@@ -28,19 +30,26 @@
               />
               <button class="bg-none p-2">
                 <span class="rounded-lg bg-lbc_orange p-2">
-                  <font-awesome-icon
-                    :icon="['fas', 'search']"
-                    class="text-sm font-thin"
-                  />
+                  <font-awesome-icon :icon="['fas', 'search']" class="text-sm font-thin" />
                 </span>
               </button>
             </form>
           </div>
         </div>
         <!-- Top : Right part -->
-        <div>
-          <a href="/login" class="flex flex-col items-center justify-center">
+        <div v-if="GlobalStore.userInfos.value.username" class="flex h-full items-center gap-[30px] text-[16px]">
+          <div class="flex flex-col items-center justify-center">
             <font-awesome-icon :icon="['far', 'user']" />
+            <p class="text-[12px]">{{ GlobalStore.userInfos.value.username }}</p>
+          </div>
+
+          <div>
+            <font-awesome-icon :icon="['fas', 'arrow-right']" @click="disconnection" class="cursor-pointer text-lbc_grey" />
+          </div>
+        </div>
+        <div v-else>
+          <a href="/login" class="flex flex-col items-center justify-center">
+            <font-awesome-icon :icon="['far', 'user']" class="" />
             <p class="text-base">Se connecter</p>
           </a>
         </div>
