@@ -11,4 +11,15 @@ import { RouterLink } from 'vue-router'
     </nav>
   </header>
 </template>
-<style scoped></style>
+<style scoped>
+header {
+  border-bottom: 2px solid orange;
+}
+nav {
+  display: flex;
+  height: 30px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+</style>
