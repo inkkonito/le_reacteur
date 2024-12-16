@@ -1,11 +1,45 @@
 <script setup>
 import { ref } from 'vue'
-const priceMin = ref()
-const princeMax = ref()
-const sort = ref('')
+import { useRouter, useRoute } from 'vue-router'
+const props = defineProps(['sort', 'priceMin', 'priceMax'])
+// console.log('props>>>', props)
+const priceMin = ref(props.priceMin)
+const priceMax = ref(props.priceMax)
+const sort = ref(props.sort)
+
+const route = useRoute()
+const router = useRouter()
+
+const handleSubmit = () => {
+  const queries = { ...route.query }
+  // SI la valeur existe, elle est ajoutée aux query, SINON la clé est retirée des query
+  if (priceMin.value) {
+    queries.pricemin = priceMin.value
+  } else {
+    delete queries.pricemin
+  }
+
+  if (priceMax.value) {
+    queries.pricemax = priceMax.value
+  } else {
+    delete queries.pricemax
+  }
+
+  if (sort.value) {
+    queries.sort = sort.value
+  } else {
+    delete queries.sort
+  }
+
+  // Pour toujours commencer à la première page de la recherche
+  queries.page = 1
+
+  // On navigue vers la route actuelle avec les query mises à jour
+  router.push({ name: 'home', query: queries })
+}
 </script>
 <template>
-  <form class="my-[40px] flex justify-between gap-[50px]">
+  <form class="my-[40px] flex justify-between gap-[50px]" @submit.prevent="handleSubmit">
     <div class="flex gap-[40px]">
       <!-- Price Min / Max -->
       <div>

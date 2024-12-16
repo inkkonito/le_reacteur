@@ -1,14 +1,31 @@
 <script setup>
-import { RouterLink } from 'vue-router'
-import { inject } from 'vue'
+import { RouterLink, useRoute, useRouter } from 'vue-router'
+import { inject, ref } from 'vue'
 
 const GlobalStore = inject('GlobalStore')
 
-console.log(GlobalStore.userInfos)
+// console.log(GlobalStore.userInfos)
 
 const disconnectUser = () => {
   GlobalStore.changeUserInfos(null)
   $cookies.remove('userInfos')
+}
+
+const search = ref('')
+const route = useRoute()
+const router = useRouter()
+
+const handleSubmit = () => {
+  const queries = { ...route.query }
+
+  if (search.value) {
+    queries.title = search.value
+  } else {
+    delete queries.title
+  }
+  // add page 1
+
+  router.push({ name: 'home', query: queries })
 }
 </script>
 <template>
@@ -27,8 +44,9 @@ const disconnectUser = () => {
             </button>
           </div>
           <div>
-            <form class="flex rounded-lg bg-lbc_grey_light">
+            <form @submit.prevent="handleSubmit" class="flex rounded-lg bg-lbc_grey_light">
               <input
+                v-model="search"
                 type="text"
                 placeholder="Recherche sur leboncoin"
                 class="w-72 rounded-lg bg-transparent pl-2 text-lg placeholder-gray-500"
